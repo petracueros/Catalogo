@@ -79,3 +79,39 @@ function renderProductos() {
         ? `<img class="card-img" src="${p.foto}" alt="${p.nombre}">`
         : `<div class="card-img-placeholder">📷</div>`}
       <div class="card-body">
+        <div class="card-name">${p.nombre}</div>
+        <div class="card-price">${p.precio ? '$ ' + p.precio : 'Consultar precio'}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function abrirProducto(id) {
+  const p = productos.find(x => x.id === id);
+  if (!p) return;
+
+  document.getElementById('modal-nombre').textContent = p.nombre;
+  document.getElementById('modal-precio').textContent = p.precio ? '$ ' + p.precio : 'Consultar precio';
+  document.getElementById('modal-desc').textContent = p.desc || '';
+
+  const fotosHTML = p.fotos && p.fotos.length > 0
+    ? p.fotos.map(f => `<img src="${f}" alt="${p.nombre}">`).join('')
+    : p.foto
+      ? `<img src="${p.foto}" alt="${p.nombre}">`
+      : '<p style="color:#7A5A3A;text-align:center;padding:40px;">📷 Fotos próximamente</p>';
+
+  document.getElementById('modal-fotos').innerHTML = fotosHTML;
+
+  const msg = encodeURIComponent('Hola! Me interesa: ' + p.nombre);
+  document.getElementById('btn-wa').href = 'https://wa.me/' + WHATSAPP + '?text=' + msg;
+
+  document.getElementById('modal').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function cerrarModal() {
+  document.getElementById('modal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+renderProductos();
