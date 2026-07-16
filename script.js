@@ -5,7 +5,7 @@ const productos = [
     desc: 'Medidas: 17x23 cm · Material: Cuero genuino · Color: Por confirmar'
   },
   { 
-    id: 2, nombre: 'Agenda Chica', categoria: 'accesorios', precio: '15.000', 
+    id: 2, nombre: 'Agenda Pequeña', categoria: 'accesorios', precio: '15.000', 
     foto: '', fotos: [],
     desc: 'Medidas: 13x16,5 cm · Material: Cuero genuino · Color: Por confirmar'
   },
@@ -15,7 +15,7 @@ const productos = [
     desc: 'Medidas: 23x12x10 cm · Material: Cuero genuino · Color: Por confirmar'
   },
   { 
-    id: 4, nombre: 'Neceser Chico', categoria: 'neceser', precio: '25.000', 
+    id: 4, nombre: 'Neceser Pequeño', categoria: 'neceser', precio: '25.000', 
     foto: '', fotos: [],
     desc: 'Medidas: 21x10x8 cm · Material: Cuero genuino · Color: Por confirmar'
   },
@@ -30,7 +30,7 @@ const productos = [
     desc: 'Medidas: 18,5x10 cm · Material: Cuero genuino · Color: Por confirmar'
   },
   { 
-    id: 7, nombre: 'Billetera Chica', categoria: 'billeteras', precio: '23.000', 
+    id: 7, nombre: 'Billetera Pequeña', categoria: 'billeteras', precio: '23.000', 
     foto: '', fotos: [],
     desc: 'Medidas: 12x9,5 cm · Material: Cuero genuino · Color: Por confirmar'
   },
