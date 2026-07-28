@@ -28,9 +28,9 @@ header p {
 #hero {
   position: relative;
   background-size: cover;
-  background-position: center 30%;
+  background-position: 60% 45%;
   background-repeat: no-repeat;
-  min-height: 480px;
+  min-height: 620px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,10 +55,10 @@ header p {
   margin-bottom: 10px;
 }
 #hero-slogan {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   font-style: italic;
   color: #E8C98A;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   margin-bottom: 18px;
 }
 #hero-desc {
