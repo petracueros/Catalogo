@@ -3,29 +3,68 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background: #F8F2EA;
   font-family: 'Georgia', serif;
 }
-
 header {
   background: #3B2A1A;
   padding: 28px;
   text-align: center;
 }
-
 header h1 {
   color: #F8F2EA;
   font-size: 2.5rem;
   letter-spacing: 0.2em;
 }
-
 header p {
   color: #B8893A;
   font-size: 0.85rem;
   margin-top: 6px;
   letter-spacing: 0.15em;
+}
+
+/* HERO */
+#hero {
+  position: relative;
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(59,42,26,0.55) 0%, rgba(59,42,26,0.75) 100%);
+}
+#hero-overlay {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #F8F2EA;
+  padding: 40px 24px;
+  max-width: 640px;
+}
+#hero-overlay h2 {
+  font-size: 2.2rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 10px;
+}
+#hero-slogan {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #E8C98A;
+  letter-spacing: 0.08em;
+  margin-bottom: 18px;
+}
+#hero-desc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #F0E8DA;
 }
 
 nav {
@@ -36,7 +75,6 @@ nav {
   flex-wrap: wrap;
   border-bottom: 2px solid #D9C5A8;
 }
-
 nav button {
   background: none;
   border: 1.5px solid #D9C5A8;
@@ -46,13 +84,11 @@ nav button {
   cursor: pointer;
   font-size: 0.85rem;
 }
-
 nav button.active {
   background: #3B2A1A;
   border-color: #3B2A1A;
   color: #F8F2EA;
 }
-
 #grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -61,7 +97,6 @@ nav button.active {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .card {
   background: #F0E8DA;
   border: 1px solid #D9C5A8;
@@ -70,18 +105,18 @@ nav button.active {
   cursor: pointer;
   transition: transform 0.2s;
 }
-
 .card:hover {
   transform: translateY(-4px);
 }
-
+.card-img-wrap {
+  position: relative;
+}
 .card-img {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
   display: block;
 }
-
 .card-img-placeholder {
   width: 100%;
   aspect-ratio: 1;
@@ -91,18 +126,28 @@ nav button.active {
   font-size: 3rem;
   background: #E8DDD0;
 }
-
+.card-vermas {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(59,42,26,0.85) 0%, rgba(59,42,26,0) 100%);
+  color: #F8F2EA;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 22px 12px 8px;
+  text-align: center;
+  pointer-events: none;
+}
 .card-body {
   padding: 16px;
 }
-
 .card-name {
   font-size: 1.1rem;
   font-weight: bold;
   color: #3B2A1A;
   margin-bottom: 8px;
 }
-
 .card-price {
   font-size: 1rem;
   font-weight: bold;
@@ -110,7 +155,6 @@ nav button.active {
   border-top: 1px solid #D9C5A8;
   padding-top: 10px;
 }
-
 footer {
   background: #3B2A1A;
   color: #B8893A;
@@ -119,7 +163,6 @@ footer {
   margin-top: 40px;
   font-size: 0.85rem;
 }
-
 #modal {
   display: none;
   position: fixed;
@@ -130,7 +173,6 @@ footer {
   justify-content: center;
   padding: 20px;
 }
-
 #modal-contenido {
   background: #F8F2EA;
   border-radius: 16px;
@@ -141,7 +183,6 @@ footer {
   padding: 24px;
   position: relative;
 }
-
 #modal-cerrar {
   position: absolute;
   top: 16px;
@@ -155,52 +196,67 @@ footer {
   cursor: pointer;
   font-size: 1rem;
 }
-
 #modal-fotos img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 8px;
 }
-
 #modal-nombre {
   font-size: 1.5rem;
   color: #3B2A1A;
   margin: 12px 0 6px;
 }
-
 #modal-desc {
   color: #7A5A3A;
   font-size: 0.9rem;
   margin-bottom: 12px;
+  line-height: 1.6;
 }
-
 #modal-precio {
   font-size: 1.3rem;
   font-weight: bold;
   color: #B8893A;
   margin-bottom: 16px;
 }
-
 #modal-botones {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
 }
-
 #modal-botones a {
   padding: 12px 24px;
   border-radius: 30px;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: bold;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.03em;
 }
-
 #btn-wa {
-  background: #25D366;
-  color: white;
+  background: #3B2A1A;
+  color: #F8F2EA;
+}
+#btn-ig {
+  background: #B8893A;
+  color: #F8F2EA;
 }
 
-#btn-ig {
-  background: #E1306C;
-  color: white;
+/* BOTON FLOTANTE WHATSAPP */
+#whatsapp-flotante {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 90;
+  transition: transform 0.2s;
+}
+#whatsapp-flotante:hover {
+  transform: scale(1.08);
 }
