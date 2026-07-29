@@ -6,7 +6,7 @@ const productos = [
     desc: 'Agenda artesanal en cuero, ideal para organizar tus días con estilo.\nMedidas: 17x23 cm\nMaterial: 100% Cuero\nColores: Café oscuro · Café claro'
   },
   { 
-    id: 2, nombre: 'Agenda Chica', categoria: 'accesorios', precio: '15.000', 
+    id: 2, nombre: 'Agenda Pequeña', categoria: 'accesorios', precio: '15.000', 
     foto: 'IMG_1569.jpg',
     fotos: ['IMG_1569.jpg','IMG_1570.jpg','IMG_1571.jpg','IMG_1572.jpg','IMG_1573.jpg','IMG_1574.jpg','IMG_1575.jpg','IMG_6200.JPG'],
     desc: 'Agenda compacta en cuero, perfecta para llevar contigo a todos lados.\nMedidas: 13x16,5 cm\nMaterial: 100% Cuero\nColores: Café oscuro · Café claro'
@@ -18,7 +18,7 @@ const productos = [
     desc: 'Neceser espacioso en cuero, ideal para viajes y uso diario.\nMedidas: 23x12x10 cm\nMaterial: 100% Cuero\nColor: Café claro'
   },
   { 
-    id: 4, nombre: 'Neceser Chico', categoria: 'neceser', precio: '25.000', 
+    id: 4, nombre: 'Neceser Pequeño', categoria: 'neceser', precio: '25.000', 
     foto: 'IMG_7482.jpg',
     fotos: ['IMG_6235.JPG','IMG_6239.JPG','IMG_7482.jpg','IMG_7483.jpg','IMG_7486.jpg','IMG_7487.jpg','IMG_7489.jpg','IMG_7491.jpg','IMG_7496.jpg'],
     desc: 'Neceser compacto en cuero, perfecto para tus artículos esenciales.\nMedidas: 21x10x8 cm\nMaterial: 100% Cuero\nColores: Café oscuro · Café claro'
@@ -36,7 +36,7 @@ const productos = [
     desc: 'Billetera espaciosa en cuero croco, con múltiples compartimentos para tarjetas y billetes.\nMedidas: 18,5x10 cm\nMaterial: Cuero croco\nColor: Burdeo / Vino tinto'
   },
   { 
-    id: 7, nombre: 'Billetera Chica', categoria: 'billeteras', precio: '23.000', 
+    id: 7, nombre: 'Billetera Pequeña', categoria: 'billeteras', precio: '23.000', 
     foto: 'IMG_1561.jpg',
     fotos: ['IMG_1561.jpg','IMG_1562.jpg','IMG_1563.jpg','IMG_1564.jpg','IMG_1565.jpg','IMG_1566.jpg','IMG_1567.jpg','IMG_1568.jpg'],
     desc: 'Billetera compacta en cuero croco, práctica y elegante.\nMedidas: 12x9,5 cm\nMaterial: Cuero croco\nColor: Burdeo / Vino tinto'
