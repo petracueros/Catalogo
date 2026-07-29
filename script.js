@@ -114,13 +114,13 @@ const productos = [
     desc: 'Mochila artesanal fabricada a pedido especialmente para ti.\nEspaciosa y funcional, ideal para el día a día.'
   },
   { 
-    id: 20, nombre: 'Cinturón', categoria: 'accesorios', precio: '18.000', 
+    id: 20, nombre: 'Cinturón', categoria: 'cinturones', precio: '18.000', 
     foto: 'IMG_7828.jpg',
     fotos: ['IMG_7828.jpg','IMG_7836.jpg','IMG_7842.jpg','IMG_7844.jpg','IMG_7850.jpg','IMG_7857.jpg','IMG_7863.jpg'],
     desc: 'Cinturón artesanal en cuero, personalizable con distintas correas y hebillas.\nCorreas disponibles: Negro liso · Café liso · Café moro · Negro textura · Café textura · Rojo textura · Dorado · Burdeo · Café textura 2\nPrecios: Correa sola $18.000 · Correa + Hebilla $27.000 · 1 Correa + 2 Hebillas $37.000 · 2 Correas + 1 Hebilla $45.000 · 2 Correas + 2 Hebillas $48.000'
   },
   { 
-    id: 21, nombre: 'Hebilla', categoria: 'accesorios', precio: '12.000', 
+    id: 21, nombre: 'Hebilla', categoria: 'cinturones', precio: '12.000', 
     foto: 'IMG_7853.jpg',
     fotos: ['IMG_7853.jpg','IMG_7855.jpg'],
     desc: 'Hebilla de cuero, ideal para renovar o combinar con tu cinturón.\n20 diseños disponibles\nPrecio: $12.000\nConsulta por WhatsApp para ver el catálogo completo de hebillas.'
